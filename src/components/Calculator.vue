@@ -88,54 +88,61 @@ export default {
 </script>
 
 <style scoped>
-.calculator {
-  margin: 30px auto 40px;
-  width: 400px;
-  font-size: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(50px, auto);
-}
-.display {
-  grid-column: 1 / 5;
-  background-color: #333;
-  color: white;
-  border-radius:8px;
-}
-.zero {
-  grid-column: 1 / 3;
-}
-.top {
+  .calculator {
+    margin: 30px auto 40px;
+    width: 400px;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+  }
+  .display {
+    grid-column: 1 / 5;
+    background-color: #333;
+    color: white;
+    border-radius:8px;
+  }
+  .zero {
+    grid-column: 1 / 3;
+  }
+  .top {
     margin-bottom:2.5%;
     margin-right:.95%;
-}
-.btn {
-  background-color: #F2F2F2;
-  border: 1px solid #999;
-  border-radius:8px;
-  margin-top:5%;
-  margin-right:10%;
-  margin-bottom:5%;
-  margin-left:0;
-}
-.btn:hover {
+  }
+  .btn {
+    background-color: #F2F2F2;
+    border: 1px solid #999;
+    border-radius:8px;
+    margin-top:5%;
+    margin-right:10%;
+    margin-bottom:5%;
+    margin-left:0;
+  }
+  .btn:hover {
     cursor:pointer;
     background-color:#ddd;
-}
-.operator {
-  background-color: orange;
-  color: white;
-  margin-right:5%;
-}
-.operator:hover {
+  }
+  .operator {
+    background-color: orange;
+    color: white;
+    margin-right:5%;
+  }
+  .operator:hover {
     background-color:#f08408;
-}
-.zero {
+  }
+  .zero {
     margin-top:3%;
     margin-right:5%;
-}
-.bottom {
-   margin-bottom:0;
-   height:57px;
-}
+  }
+  .bottom {
+    margin-bottom:0;
+    height:57px;
+  }
+
+  /* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .calculator {
+      max-width:333px;
+    }
+  }
 </style>

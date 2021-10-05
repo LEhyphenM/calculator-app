@@ -1,48 +1,42 @@
 <template>
   <div id="app">
-    <h1> {{ title }} </h1>
+    <Header />
     <Calculator />
-    <h6> {{ footer }} </h6>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Calculator from './components/Calculator.vue'
+import Header from "./components/Header.vue";
+import Calculator from "./components/Calculator.vue";
+import Footer from "./components/Footer.vue";
 export default {
-  name: 'app',
+  name: "App",
   data() {
-    return {
-      title: "Calculator App",
-      footer: "Lauren Elliott-Manheim • 2015-2022 • Ex astris, scientia"
-    }
+    return;
   },
   components: {
-    Calculator
+    Header,
+    Calculator,
+    Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 
-h1 {
-  border-bottom:1px solid #ddd;
-  padding-bottom:10px;
-  display:inline-block;
-}
-
-h6 {
-  font-weight:400;
-  letter-spacing:2.25px;
-  text-transform:uppercase;
-  padding:16px;
-}
-
+/* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    #app {
+      margin-top:40px;
+    }
+  }
 </style>
