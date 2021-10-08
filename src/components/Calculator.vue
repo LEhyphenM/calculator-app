@@ -101,6 +101,8 @@ export default {
     background-color: #333;
     color: white;
     border-radius:8px;
+    padding-right:20px;
+    text-align: right;
   }
   .zero {
     grid-column: 1 / 3;

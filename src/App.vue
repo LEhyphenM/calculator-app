@@ -12,9 +12,6 @@ import Calculator from "./components/Calculator.vue";
 import Footer from "./components/Footer.vue";
 export default {
   name: "App",
-  data() {
-    return;
-  },
   components: {
     Header,
     Calculator,
